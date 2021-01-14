@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Latest news
+{% endblock %}
+
+{% block main %}
+<div class="col-md-12">
+     <h1 class ="Display-2 float-left col-md-12">Latest Headlines</h1>
+</div>
+
+<div class="card col-md-12">
+  <div class="card-body bg.light my-card">
+    <div class="row">
+     {% for news, desc, i in context %}
+         <div class="col-md-4">
+             <hr>
+             <img class="news-image" src="{{i}}" alt="">
+         </div>
+         <div class="col-md-8">
+            <div class="text-div">
+             <hr>
+             <h4 class="text">News:</h4><div class="text">{{news}}</div>
+             <h5 class="text">Description:</h5><div class="text">{{desc}}</div>
+            </div>
+         </div>
+      {%endfor%}
+     </div>
+  </div>
+</div>
+{% endblock %}
+
+<!-- the image link is storedd in i -->
+<!--I am dynamically accessing the article at the 0 index of the list but no more than that-->
+<!-- where is the instruction for the program to access more and what is the limit

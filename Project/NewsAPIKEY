@@ -1,0 +1,4 @@
+api_key=11878960dfcf4f289cc492eb31c87900
+   $ export FLASK_APP=covidtracker.py
+    $ export FLASK_ENV=development
+    $ flask run

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+     Register
+{% endblock %}
+
+{% block main %}
+`    <div class="my-container mx-auto" >
+            <form action="/register" method="post">
+        <h3 class="pt-3">Register Account</h3>
+        <hr>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Password Again" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+        <hr>
+    </form>
+
+               <h3 class="pt-3">Already Registered?</h3>
+          <p>Log In now for daily <br> Covid-19 UK statistics and news</p>
+              <form action="/login">
+                   <button class="btn btn-primary" type="submit">Log In</button>
+              </form>
+             <hr class="push-register-footer">
+    </div>
+{% endblock %}

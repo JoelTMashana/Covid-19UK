@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block main %}
+     <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+              <h1 class ="Display-2">Area codes</h1>
+              <hr>
+         </div>
+         <div class="col-md-12">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>Nation</th>
+                          <th>Area Code</th>
+                      </tr>
+                  </thead>
+
+                      <tr>
+                          <td>England</td>
+                          <td>E92000001</td>
+                      </tr>
+                           <tr>
+                               <td>Nothern Ireland</td>
+                               <td>N92000002</td>
+                           </tr>
+                                <tr>
+                                    <td>Scotland</td>
+                                    <td>S92000003</td>
+                                </tr>
+                                      <tr>
+                                         <td>Wales</td>
+                                         <td>W92000004</td>
+                                     </tr>
+              </table>
+         </div>
+      </div>
+     <form action="/uk" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus name="nation" class="form-control" placeholder="E92000001" type="text" class="form-control">
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+    <hr class="push-footer">
+    </div>
+{% endblock %}

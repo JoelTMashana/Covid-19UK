@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search: England
+{% endblock %}
+
+{% block main %}
+     <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+              <h1 class ="Display-2">Area codes</h1>
+          <div>
+              <hr>
+         </div>
+         </div>
+         <div class="col-md-12">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>Nation</th>
+                          <th>Region</th>
+                          <th>Area Code</th>
+                      </tr>
+                  </thead>
+
+                      <tr>
+                          <td>England</td>
+                          <td>East Midlands</td>
+                          <td>E12000004</td>
+                      </tr>
+                           <tr>
+                               <td>England</td>
+                               <td>East of England</td>
+                               <td>E12000006</td>
+                           </tr>
+                                <tr>
+                                    <td>England</td>
+                                    <td>London</td>
+                                    <td>E12000007</td>
+                                </tr>
+                                      <tr>
+                                         <td>England</td>
+                                         <td>North East</td>
+                                         <td>E12000001</td>
+                                     </tr>
+                                           <tr>
+                                              <td>England</td>
+                                              <td>North West</td>
+                                              <td>E12000002</td>
+                                           </tr>
+                                                 <tr>
+                                                    <td>England</td>
+                                                    <td>South East</td>
+                                                    <td>E12000009</td>
+                                                 </tr>
+                                                       <tr>
+                                                          <td>England</td>
+                                                          <td>South West</td>
+                                                          <td>E12000007</td>
+                                                       </tr>
+                                                            <tr>
+                                                                <td>England</td>
+                                                                <td>West Midlands</td>
+                                                                <td>E12000005</td>
+                                                            </tr>
+                                                                 <tr>
+                                                                    <td>England</td>
+                                                                    <td>Yorkshire and The Humber</td>
+                                                                    <td>E12000003</td>
+                                                                 </tr>
+              </table>
+         </div>
+      </div>
+     <form action="/" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus name="region" class="form-control" placeholder="E12000007" type="text" class="form-control">
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+    <hr>
+     </div>
+    </div>
+
+{% endblock %}

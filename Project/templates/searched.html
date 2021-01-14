@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Data
+{% endblock %}
+
+{% block main %}
+      <div class="col-md-12">
+              <h1 class ="Display-2 float-left col-md-12">Summary</h1>
+         </div>
+      <div class="area">
+       <div class="col-md-12">
+       <h5>Daily update</h5>
+       <hr>
+       </div>
+ <!----CARD DECK---->
+       <div class="card-deck">
+             <div class="card bg-info text-white my-card">
+             <div class="card-header">New cases</div>
+              <div class="card-body text-center">
+                 <h5>Today</h5>
+                 <h3 class="card-title">Positive tests</h2>
+                 <h2 class=""><strong>{{newCases}}</strong></h2>
+              </div>
+                  <div class="card-footer">
+                     <p class="card-text">Latest data provided {{date}}</p>
+                  </div>
+            </div>
+
+                 <div class="card bg-info text-white my-card">
+             <div class="card-header">New deaths</div>
+              <div class="card-body text-center">
+                 <h5>Today</h5>
+                 <h3 class="card-title">Recent deaths</h2>
+                 <h2 class=""><strong>{{newDeaths}}</strong></h2>
+              </div>
+                  <div class="card-footer">
+                      <p class="card-text">Latest data provided {{date}}</p>
+                  </div>
+            </div>
+
+               <div class="card bg-info text-white my-card">
+             <div class="card-header">Cumulative cases</div>
+              <div class="card-body text-center">
+                 <h5>All time</h5>
+                 <h3 class="card-title">Positive tests</h2>
+                 <h2 class=""><strong>{{totalCases}}</strong></h2>
+              </div>
+                  <div class="card-footer">
+                      <p class="card-text">Latest data provided {{date}}</p>
+                  </div>
+              </div>
+            <div class="card bg-info text-white my-card">
+             <div class="card-header">Cumulative deaths</div>
+              <div class="card-body text-center">
+               <h5>All time</h5>
+                 <h3 class="card-title">Total deaths</h2>
+                 <h2 class=""><strong>{{totalDeaths}}</strong></h2>
+              </div>
+                  <div class="card-footer">
+                      <p class="card-text">Latest data provided {{date}}</p>
+                  </div>
+            </div>
+       </div>
+        <br>
+       <br>
+       <hr>
+     </div>
+{% endblock %}
